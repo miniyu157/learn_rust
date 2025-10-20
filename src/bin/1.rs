@@ -9,7 +9,8 @@ fn main() {
 
     let records = penguin_data.lines(); // 返回迭代器, 迭代器可以被 for 消耗
 
-    for (i, record) in records.enumerate() { // .enumerate() 将迭代器变成带有索引的元祖
+    for (i, record) in records.enumerate() {
+        // .enumerate() 将迭代器变成带有索引的元祖
         if i == 0 || record.trim().is_empty() {
             continue;
         }
